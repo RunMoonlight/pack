@@ -9,7 +9,7 @@ import com.wz.pack.bean.TestBean;
 import com.wz.pack.ui.test.adapter.TestAdapter;
 import com.wz.pack.ui.test.contact.TestContact;
 import com.wz.pack.ui.test.presenter.TestPresenter;
-import com.zhon.baselib.mvpbase.baseImpl.BaseActivity;
+import com.wz.baselib.mvpbase.baseImpl.BaseActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,10 +35,6 @@ public class TestActivity extends BaseActivity<TestContact.presenter> implements
         presenter.getData();
     }
 
-    @Override
-    public int getContentViewId() {
-        return 0;
-    }
 
     /**
      * 初始化界面

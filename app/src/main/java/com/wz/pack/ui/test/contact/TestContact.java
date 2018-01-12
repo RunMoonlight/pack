@@ -1,8 +1,8 @@
 package com.wz.pack.ui.test.contact;
 
 import com.wz.pack.bean.TestBean;
-import com.zhon.baselib.mvpbase.BasePresenter;
-import com.zhon.baselib.mvpbase.BaseView;
+import com.wz.baselib.mvpbase.BasePresenter;
+import com.wz.baselib.mvpbase.BaseView;
 
 import java.util.List;
 

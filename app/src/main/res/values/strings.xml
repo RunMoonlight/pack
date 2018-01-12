@@ -1,3 +1,44 @@
 <resources>
-    <string name="app_name">PackCai</string>
+    <string name="app_name">背包菜</string>
+
+
+    <string name="text_hello_cai">你好，背包菜</string>
+
+
+    <!--登錄-->
+    <string name="login_phone">通过手机号码登录</string>
+    <string name="et_hint_login_password">账号密码</string>
+    <string name="login_pack_user">使用背包账号登录</string>
+    <string name="login_forget_pwd">忘记密码</string>
+    <string name="login_registered_account">注册账号</string>
+    <string name="china_phone_num">+86</string>
+    <string name="china">中国</string>
+    <string name="country_and_area_hint">国家和地区</string>
+    <string name="country_choose_location">定位到的位置</string>
+    <string name="country_choose_select_position">选择位置</string>
+    <string name="get_mespin_timer">%s秒后可以重发</string>
+    <string name="get_message_pin">获取验证码</string>
+    <string name="get_verify_code_error">获取验证码失败</string>
+    <string name="agree_protocol_and_regist">同意协议并注册</string>
+    <string name="user_protocol">背包菜用户隐私协议</string>
+    <string name="pwd_hint">输入登录密码，至少6位</string>
+    <string name="message_pin_hint">短信验证码</string>
+    <string name="phone_numb_hint">请填写手机号码</string>
+    <string name="login_now">立即登录</string>
+    <string name="input_verify_code">验证码</string>
+    <string name="please_input_verify_code">请输入验证码</string>
+    <string name="btn_login">登录</string>
+    <string name="btn_later_prompt">稍后提醒</string>
+
+
+    <!--home-->
+    <string name="tv_hot_trip">热门游记</string>
+    <string name="draft_box">草稿箱</string>
+    <string name="set">设置</string>
+
+    <string name="im_button">按钮</string>
+    <string name="im_notos">相片</string>
+    <string name="login_email_name">背包用户名或邮箱登录</string>
+    <string name="open">打开</string>
+    <string name="close">关闭</string>
 </resources>

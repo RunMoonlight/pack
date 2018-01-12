@@ -37,4 +37,6 @@ dependencies {
     compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
     compile 'com.squareup.okhttp3:logging-interceptor:3.8.1'
 
+    // 沉浸式状态栏
+    compile 'com.jaeger.statusbarutil:library:1.4.0'
 }

@@ -3,4 +3,22 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="colormain">#ff58c9d8</color>
+
+
+    <color name="black">#ff000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="color_99ffffff">#99ffffff</color>
+    <color name="btn_search_cancel_press">#4dffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="cl_city_hunter_line">#b3ffffff</color>
+    <color name="color_804abdcc">#804abdcc</color>
+    <color name="color_4abdcc">#ff4abdcc</color>
+    <color name="color_bread_blue">#ff4abdcc</color>
+
+
+
+    <color name="startTripAlertBg">#bb000000</color>
+    <color name="color_5c5c5c">#ff5c5c5c</color>
 </resources>

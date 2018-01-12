@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="left"
+    android:background="@color/colormain">
+
+    <LinearLayout
+        android:id="@+id/llUserInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70.0dip"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/ivAvatar"
+                android:layout_width="52.0dip"
+                android:layout_height="52.0dip"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_new_default_avatar" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15.0dip"
+                android:layout_marginTop="15.0dip"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:maxWidth="120.0dip"
+                android:text="@string/btn_login"
+                android:textColor="@drawable/homepage_nav_textcolor"
+                android:textSize="12.0sp" />
+
+            <ImageView
+                android:id="@+id/ivSlidingMsgDot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:layout_toRightOf="@+id/tvUserName"
+                android:src="@drawable/ic_msg_dot_with_white_circle"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvMsgCount"
+                android:layout_width="23.0dip"
+                android:layout_height="16.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:layout_toRightOf="@+id/tvUserName"
+                android:background="@drawable/ic_msg_count_bg"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="9.0sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llUserInfo"
+        android:layout_marginTop="3.0dip"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvHotTrip"
+            style="@style/homepage_nav_item_style"
+            android:text="@string/tv_hot_trip" />
+
+        <TextView
+            android:id="@+id/tv_draft"
+            style="@style/homepage_nav_item_style"
+            android:text="@string/draft_box" />
+
+        <TextView
+            android:id="@+id/tvSetting"
+            style="@style/homepage_nav_item_style"
+            android:text="@string/set" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,8 +1,10 @@
 package com.wz.pack.ui.login.activity;
 
+import android.os.Bundle;
+
 import com.wz.pack.R;
-import com.zhon.baselib.mvpbase.BasePresenter;
-import com.zhon.baselib.mvpbase.baseImpl.BaseActivity;
+import com.wz.baselib.mvpbase.BasePresenter;
+import com.wz.baselib.mvpbase.baseImpl.BaseActivity;
 
 /**
  - @Author:  wang_zhen1
@@ -11,14 +13,27 @@ import com.zhon.baselib.mvpbase.baseImpl.BaseActivity;
  */
 
 public class LoginActivity extends BaseActivity {
+
+
+
     @Override
-    public int getContentViewId() {
-        return R.layout.activity_login;
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
+        init();
+
+    }
+
+
+
+    private void init() {
+
     }
 
     @Override
     public BasePresenter initPresenter() {
         return null;
+
     }
 
 

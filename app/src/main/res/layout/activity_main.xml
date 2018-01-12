@@ -1,19 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/activity_main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
-    <Button
-        android:id="@+id/button"
-        android:onClick="getFollowers"
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tl_custom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="请求"/>
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/dl_left"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            style="@style/match_parent"
+            android:visibility="visible">
+
+
+            <RelativeLayout
+                style="@style/match_parent"
+                android:gravity="bottom|center|right"
+                android:visibility="visible">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_plus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="20dp"
+                    android:scaleType="center"
+                    android:src="@drawable/fab_plus"
+                    app:backgroundTint="@color/colormain" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <!--侧滑菜单-->
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/colormain">
+
+            <include layout="@layout/layout_main_left"></include>
+        </LinearLayout>
+
+    </android.support.v4.widget.DrawerLayout>
 </LinearLayout>
