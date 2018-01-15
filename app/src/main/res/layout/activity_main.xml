@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical">
@@ -21,28 +22,31 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
 
-        <RelativeLayout
-            style="@style/match_parent"
-            android:visibility="visible">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/coordinator_layout"
+            style="@style/match_parent">
 
 
-            <RelativeLayout
-                style="@style/match_parent"
-                android:gravity="bottom|center|right"
-                android:visibility="visible">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_layout"
+                style="@style/match_parent">
 
-                <android.support.design.widget.FloatingActionButton
-                    android:id="@+id/fab_plus"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_margin="20dp"
-                    android:scaleType="center"
-                    android:src="@drawable/fab_plus"
-                    app:backgroundTint="@color/colormain" />
-            </RelativeLayout>
-        </RelativeLayout>
+            </android.support.v7.widget.RecyclerView>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_plus"
+                android:layout_width="403dp"
+                android:layout_height="wrap_content"
+                android:scaleType="center"
+                android:src="@drawable/fab_plus"
+                android:layout_margin="20dp"
+                app:backgroundTint="@color/colormain"
+                app:layout_anchor="@+id/rv_layout"
+                app:layout_anchorGravity="right|bottom"
+                tools:layout_editor_absoluteY="5dp" />
+        </android.support.design.widget.CoordinatorLayout>
+
         <!--侧滑菜单-->
         <LinearLayout
             android:layout_width="300dp"

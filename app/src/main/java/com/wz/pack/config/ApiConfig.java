@@ -6,4 +6,7 @@ package com.wz.pack.config;
 
 public class ApiConfig {
     public static final String BASE_URL = "https://news-at.zhihu.com/api/4/";
+
+
+    public static final String BASE_URL_GANK = "http://gank.io/api/";
 }

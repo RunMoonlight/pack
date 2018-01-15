@@ -1,4 +1,4 @@
-package com.wz.pack.ui.test.adapter;
+package com.wz.pack.ui.main.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -10,7 +10,6 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.wz.pack.R;
-import com.wz.pack.bean.TestBean;
 import com.wz.pack.ui.main.bean.MainBean;
 
 import java.util.List;
@@ -20,12 +19,12 @@ import java.util.List;
  - @Time:  2018/1/15 0015 15:26
  - @Description:
  */
-public class TestAdapter extends RecyclerView.Adapter<TestAdapter.viewHolder> {
+public class MainAdapter extends RecyclerView.Adapter<MainAdapter.viewHolder> {
 
-    private List<TestBean.StoriesBean> list;
+    private List<MainBean.ResultsBean> list;
     private Context context;
 
-    public TestAdapter(List<TestBean.StoriesBean> list) {
+    public MainAdapter(List<MainBean.ResultsBean> list) {
         this.list = list;
     }
 
@@ -37,8 +36,13 @@ public class TestAdapter extends RecyclerView.Adapter<TestAdapter.viewHolder> {
 
     @Override
     public void onBindViewHolder(viewHolder holder, int position) {
-        Glide.with(context).load(list.get(position).getImages().get(0)).crossFade().into(holder.imageView);
-        holder.textView.setText(list.get(position).getTitle());
+        if (list.get(position).getImages()!=null && list.get(position).getImages().size()>0){
+
+            Glide.with(context).load(list.get(position).getImages().get(0)).crossFade().into(holder.imageView);
+        }else {
+            holder.imageView.setVisibility(View.GONE);
+        }
+        holder.textView.setText(list.get(position).getDesc());
         holder.textView1.setText("2017-9-7 12:00");
     }
 

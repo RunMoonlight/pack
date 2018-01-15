@@ -9,7 +9,7 @@ import com.wz.baselib.retroft.BaseApiImpl;
 
 public class Api extends BaseApiImpl {
 
-    private static Api api = new Api(ApiConfig.BASE_URL);
+    private static Api api = new Api(ApiConfig.BASE_URL_GANK);
 
     public Api(String baseUrl) {
         super(baseUrl);

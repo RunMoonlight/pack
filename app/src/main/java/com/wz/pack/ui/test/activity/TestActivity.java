@@ -6,6 +6,7 @@ import android.support.v7.widget.RecyclerView;
 
 import com.wz.pack.R;
 import com.wz.pack.bean.TestBean;
+import com.wz.pack.ui.main.adapter.MainAdapter;
 import com.wz.pack.ui.test.adapter.TestAdapter;
 import com.wz.pack.ui.test.contact.TestContact;
 import com.wz.pack.ui.test.presenter.TestPresenter;

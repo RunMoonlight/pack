@@ -19,7 +19,7 @@
 
 
             <ImageView
-                android:id="@+id/ivAvatar"
+                android:id="@+id/iv_vatar"
                 android:layout_width="52.0dip"
                 android:layout_height="52.0dip"
                 android:layout_centerInParent="true"
