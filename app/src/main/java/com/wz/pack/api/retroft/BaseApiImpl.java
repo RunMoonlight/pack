@@ -1,4 +1,4 @@
-package com.wz.baselib.retroft;
+package com.wz.pack.api.retroft;
 
 import android.util.Log;
 
@@ -34,6 +34,7 @@ public class BaseApiImpl implements BaseApi {
                 ))
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .client(httpBuilder.addInterceptor(getLoggerInterceptor()).build())
+                .client(httpBuilder.addInterceptor(new BaseUrlInterceptor()).build())
                 .baseUrl(baseUrl);
     }
 

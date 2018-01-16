@@ -1,4 +1,4 @@
-package com.wz.pack.ui.main.bean;
+package com.wz.pack.bean;
 
 import com.wz.baselib.mvpbase.baseImpl.BaseBean;
 

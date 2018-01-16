@@ -1,7 +1,7 @@
 package com.wz.pack.api;
 
+import com.wz.pack.api.retroft.BaseApiImpl;
 import com.wz.pack.config.ApiConfig;
-import com.wz.baselib.retroft.BaseApiImpl;
 
 /**
  * Created by wang_zhen1 on 2018/1/11 0011.

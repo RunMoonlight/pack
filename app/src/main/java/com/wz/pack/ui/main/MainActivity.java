@@ -17,8 +17,8 @@ import com.wz.baselib.mvpbase.baseImpl.BaseActivity;
 import com.wz.pack.R;
 import com.wz.pack.ui.login.activity.LoginActivity;
 import com.wz.pack.ui.main.adapter.MainAdapter;
-import com.wz.pack.ui.main.bean.MainBean;
-import com.wz.pack.ui.main.contact.MainContact;
+import com.wz.pack.bean.MainBean;
+import com.wz.pack.ui.main.contract.MainContract;
 import com.wz.pack.ui.main.presenter.MainPresenter;
 
 import java.util.ArrayList;
@@ -28,7 +28,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class MainActivity extends BaseActivity<MainContact.presenter> implements MainContact.MainView {
+public class MainActivity extends BaseActivity<MainContract.presenter> implements MainContract.MainView {
 
     @BindView(R.id.tl_custom)
     Toolbar mToolbar;
@@ -66,7 +66,7 @@ public class MainActivity extends BaseActivity<MainContact.presenter> implements
     }
 
     @Override
-    public MainContact.presenter initPresenter() {
+    public MainContract.presenter initPresenter() {
         return new MainPresenter(this);
     }
 

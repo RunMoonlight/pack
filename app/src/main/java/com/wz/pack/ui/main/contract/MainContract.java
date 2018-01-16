@@ -1,8 +1,8 @@
-package com.wz.pack.ui.main.contact;
+package com.wz.pack.ui.main.contract;
 
 import com.wz.baselib.mvpbase.BasePresenter;
 import com.wz.baselib.mvpbase.BaseView;
-import com.wz.pack.ui.main.bean.MainBean;
+import com.wz.pack.bean.MainBean;
 
 /**
  - @Author:  wang_zhen1
@@ -10,7 +10,7 @@ import com.wz.pack.ui.main.bean.MainBean;
  - @Description:
  */
 
-public interface MainContact {
+public interface MainContract {
 
     interface MainView extends BaseView{
         /**

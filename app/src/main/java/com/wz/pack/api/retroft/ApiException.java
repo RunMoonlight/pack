@@ -1,4 +1,4 @@
-package com.wz.baselib.retroft;
+package com.wz.pack.api.retroft;
 
 /*
  * 项目名:    Pigeon
